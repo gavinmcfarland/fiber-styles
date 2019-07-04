@@ -13,5 +13,14 @@ module.exports = function({ addUtilities, theme }) {
 		};
 	});
 
+	const colorClass = {
+		[`[class*="color-theme"]`]: {
+			color: "var(--color)",
+			backgroundColor: "var(--background-color)"
+		}
+	};
+
+	addUtilities(colorClass);
+
 	addUtilities(utilities);
 };

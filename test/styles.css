@@ -7447,8 +7447,13 @@ video {
   letter-spacing: 0.3em;
 }
 
+[class*="color-theme"] {
+  color: var(--color);
+  background-color: var(--background-color);
+}
+
 .color-theme-light {
-  --color: green;
+  --color: blue;
   --background-color: aqua;
   --heading-color: red;
   --link-color: pink;
