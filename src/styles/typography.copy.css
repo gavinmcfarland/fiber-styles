@@ -1,0 +1,83 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	@apply color-theme;
+	@apply margin-7sp,4sp text-3;
+}
+
+:--heading,
+:--text-block,
+:--code-block {
+	@apply margin-4sp;
+}
+
+:--heading {
+	@apply text-display;
+}
+
+h1 {
+	@apply text-7;
+	color: var(--heading-color);
+}
+
+h2 {
+	@apply text-6;
+	color: var(--heading-color);
+}
+
+h3 {
+	@apply text-5;
+	color: var(--heading-color);
+}
+
+h4 {
+	@apply text-4;
+	color: var(--heading-color);
+}
+
+h5 {
+	@apply text-3;
+	color: var(--heading-color);
+}
+
+h6 {
+	@apply text-2;
+	color: var(--heading-color);
+}
+
+:--text-block {
+	@apply text-body;
+}
+
+a {
+	cursor: pointer;
+	color: var(--link-color);
+}
+
+small {
+	@apply text-legal;
+}
+
+caps {
+	@apply text-caps;
+}
+
+blockquote,
+q {
+	@apply text-quote;
+}
+
+code {
+	@apply text-code;
+	@apply color-theme-reverse;
+}
+
+:--code-inline {
+	@apply padding-0.25sp,0.5sp;
+}
+
+:--code-block {
+	@apply padding-2sp;
+}

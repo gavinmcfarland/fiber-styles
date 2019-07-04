@@ -1,0 +1,84 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	@extend .color-theme;
+	margin: 7sp 4sp;
+	font-size: 3fs;
+}
+
+:--heading,
+:--text-block,
+:--code-block {
+	margin-block: 4sp;
+}
+
+:--heading {
+	@extend .text-display;
+}
+
+h1 {
+	font-size: 7fs;
+	color: var(--heading-color);
+}
+
+h2 {
+	font-size: 6fs;
+	color: var(--heading-color);
+}
+
+h3 {
+	font-size: 5fs;
+	color: var(--heading-color);
+}
+
+h4 {
+	font-size: 4fs;
+	color: var(--heading-color);
+}
+
+h5 {
+	font-size: 3fs;
+	color: var(--heading-color);
+}
+
+h6 {
+	font-size: 2fs;
+	color: var(--heading-color);
+}
+
+:--text-block {
+	@extend .text-body;
+}
+
+a {
+	cursor: pointer;
+	color: var(--link-color);
+}
+
+small {
+	@extend .text-legal;
+}
+
+caps {
+	@extend .text-caps;
+}
+
+blockquote,
+q {
+	@extend .text-quote;
+}
+
+code {
+	@extend .text-code;
+	@extend .color-theme-reverse;
+}
+
+:--code-inline {
+	padding: 0.25sp 0.5sp;
+}
+
+:--code-block {
+	padding: 2sp;
+}
